@@ -4,8 +4,15 @@ import matematica.primos.model.NumerosPrimos;
 
 public class VerificadorPrimo extends NumerosPrimos {
 
-    public void verificarSeEhPrimo(){
+    public VerificadorPrimo(int numero) {
+        super(numero);
+    }
 
+    public void verificarSeEhPrimo(){
+        if (verificarPrimalidade()){ //se o return true, nao eh primo
+            System.out.println(String.format("O numero %d não é primo.",numero));
+        } else
+            System.out.println(String.format("O numero %d é primo.",numero));
     }
 
 }
