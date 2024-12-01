@@ -8,6 +8,7 @@ public class VerificadorPrimo extends NumerosPrimos {
         super(numero);
     }
 
+    @Override
     public void verificarSeEhPrimo(){
         if (verificarPrimalidade()){ //se o return true, nao eh primo
             System.out.println(String.format("O numero %d não é primo.",numero));

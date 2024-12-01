@@ -27,7 +27,29 @@ public class NumerosPrimos {
         }
     }
 
-    public void listarPrimos() {
+    public void verificarSeEhPrimo() {
+    }
 
+    public int listarPrimos() {
+        boolean proximoPrimoEncontrado = false;
+        int proximoNumeroPrimo = getNumero() + 1;
+        do {
+            proximoPrimoEncontrado = true; // assumindo que o proximo numero sera um numero primo
+            double raizDoNumero = Math.sqrt(proximoNumeroPrimo); //metodo do java para calculo da raiz quadrada
+            for (int i = 2; i <= raizDoNumero; i++) {
+                if (proximoNumeroPrimo % i == 0) {
+                    proximoPrimoEncontrado = false;
+                    break;
+                }
+            }
+            if (!proximoPrimoEncontrado){
+                proximoNumeroPrimo++;
+            }
+        }
+        while (!proximoPrimoEncontrado);
+        return proximoNumeroPrimo;
+    }
+
+    public void gerarProximoPrimo() {
     }
 }

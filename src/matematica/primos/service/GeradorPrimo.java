@@ -8,7 +8,8 @@ public class GeradorPrimo extends NumerosPrimos {
         super(numero);
     }
 
+    @Override
     public void gerarProximoPrimo(){
-
+        System.out.println(String.format("O proximo numero primo é %d",listarPrimos()));
     }
 }
