@@ -34,8 +34,8 @@ public class NumerosPrimos {
         boolean proximoPrimoEncontrado = false;
         int proximoNumeroPrimo = getNumero() + 1;
         do {
-            proximoPrimoEncontrado = true; // assumindo que o proximo numero sera um numero primo
-            double raizDoNumero = Math.sqrt(proximoNumeroPrimo); //metodo do java para calculo da raiz quadrada
+            proximoPrimoEncontrado = true; //Assumindo que o proximo numero sera um numero primo
+            double raizDoNumero = Math.sqrt(proximoNumeroPrimo); //Metodo do java para calculo da raiz quadrada
             for (int i = 2; i <= raizDoNumero; i++) {
                 if (proximoNumeroPrimo % i == 0) {
                     proximoPrimoEncontrado = false;
